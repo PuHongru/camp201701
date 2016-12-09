@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程表</title>
+</head>
+<body>
+    <h1>北京邮电大学2016-2017秋学期学生学期课表</h1>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th align="center">时间</th>
+                <th align="center">节次</th>
+                <th align="center">星期一</th>
+                <th align="center">星期二</th>
+                <th align="center">星期三</th>
+                <th align="center">星期四</th>
+                <th align="center">星期五</th>
+                <th align="center">星期六</th>
+                <th align="center">星期日</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--上午-->
+            <tr>
+                <th rowspan="4" align="center">上午</th>
+                <td align="center">一</td>
+                <td rowspan="2" align="left">数据仓库与知识发现{2-19周[教师：牛坤,地点:3-235]}</td>
+                <td align="left"></td>
+                <td rowspan="2" align="left">数据仓库与知识发现{2-10周[教师：牛坤,地点:3-235]}</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">二</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">三</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td rowspan="2" align="left">分布式计算环境{2-19周[地点：3-239]}</td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">四</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <!--下午-->
+            <tr>
+                <th rowspan="4" align="center">下午</th>
+                <td align="center">五</td>
+                <td align="left">基础英语（写译）1班{2-19周[教师：王林，地点：3-117]}</td>
+                <td rowspan="2" align="left">中国特色社会主义理论与实践研究1班{2-19周[教师：齐银燕，地点:3-239]}</td>
+                <td rowspan="3" align="left">高级数理逻辑{2-19周[教师：姜堰,地点：3-237]}</td>
+                <td align="left"></td>
+                <td rowspan="2" align="left">基础英语（听说）20班{2-19周[教师：Margaret Lynn,地点：1-234]}</td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">六</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">七</td>
+                <td rowspan="2" align="left">自然辩证法概论5班（前半学期）{2-10周[教师：李全喜,地点：3-239]}</td>
+                <td rowspan="2" align="left">增值业务技术{2-19周[教师：乔秀全，地点：主-1504]}</td>
+                <td rowspan="2" align="left">软件开发项目管理{2-19周[教师：博林，地点：主-324]}</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">八</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <!--晚上-->
+            <tr>
+                <th rowspan="3" align="center">晚上</th>
+                <td align="center">九</td>
+                <td rowspan="2" align="left">现代信息检索技术{2-19周[教师：刘传昌，地点：主-212]}</td>
+                <td align="left"></td>
+                <td rowspan="2" align="left">知识产权及信息检索（前半学期）{2-10周[教师：吴旭，地点：3-239]}</td>
+                <td rowspan="2" align="left">创新与创业（学术及职业素养类课程）前半学期{2-10周[教师：高泽华，地点：3-239]}</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">十</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+            <tr>
+                <td align="center">十一</td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+                <td align="left"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

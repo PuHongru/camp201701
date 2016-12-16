@@ -1,0 +1,651 @@
+/************************
+* 页面样式
+************************/
+
+/*===================
+  基本默认值
+===================*/
+html{
+    color: #111;
+    background-color: #fff;
+}
+body{
+    font: 12px Helvetica, Arial, sans-serif;
+    line-height: 1.62;
+}
+ul,ol,label,div{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: #669;
+}
+a:link{
+    color: #37a;
+}
+form{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.wrapper{
+    width: 950px;
+    margin: 0 auto;
+}
+/*=================
+  工具样式
+  ================*/
+.center-block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pull-right{
+    float: right !important;
+}
+.pull-left{
+    float: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+.invisible{
+    visibility: hidden;
+}
+.text-hide{
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+/*.clearfix:before,*/
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+/*=================
+  header部分
+  ================*/
+header{
+    width: 950px;
+    margin: 25px auto;
+}
+header h1{
+    display: inline-block;
+    /*vertical-align: middle;*/
+    width: 160px;
+    height: 34px;
+    background: url("../img/logo_db.png") no-repeat 0 0;
+    /*float: left;*/
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 12px;
+    overflow: hidden;
+}
+header h1 a{
+    display: block;
+    height: 34px;
+    line-height: 10em;
+}
+header .search{
+    position: relative;
+    display: inline-block;
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+}
+header .search form{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+header .search .input{
+    display: block;
+    height: 30px;
+    overflow: hidden;
+}
+header .search .input input::-webkit-input-placeholder {
+    color: #ccc;
+}
+header .search .input input:-ms-input-placeholder {  /*IE10+*/
+    color: #ccc;
+}
+header .search .input input:-moz-placeholder {    /*Firefox4-18*/
+    color: #ccc;
+}
+header .search .input input::-moz-placeholder {  /* Firefox19+*/
+    color: #ccc;
+}
+header .search .input input{
+    width: 240px;
+    height: 20px;
+    border: none;
+    padding: 5px;
+    font-size: 13px;
+    vertical-align: middle;
+    outline: none;
+}
+header .search .search-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    background: url("../img/bn_srh_1.png") no-repeat 50% 50%;
+}
+header .search .search-btn input{
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+header nav{
+    float: right;
+    margin-top: 8px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 0 0 0 12px;
+    padding: 0;
+}
+header nav ul li a{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    overflow: hidden;
+    margin: 0;
+    outline: none;
+    line-height: 20em;
+    background: url("../img/anony_nav_logo.png") no-repeat;
+}
+header nav ul li a.lnk-book{
+    background-position: 0 0;
+}
+header nav ul li a.lnk-movie{
+    background-position: -60px 0;
+}
+header nav ul li a.lnk-music{
+    background-position: -120px 0;
+}
+header nav ul li a.lnk-group{
+    background-position: -180px 0;
+}
+header nav ul li a.lnk-location{
+    background-position: -240px 0;
+}
+header nav ul li a.lnk-FM{
+    background-position: -298px 0;
+}
+header nav ul li a.lnk-dongxi{
+    background-position: -360px 0;
+}
+header nav ul li a.lnk-market{
+    background-position: -421px 0;
+}
+/*=======================
+  登录/注册  reg-new部分
+  =====================*/
+#reg-new{
+    margin-bottom: 25px;
+    background: url("../img/doubanapp4_bg.png") no-repeat top right;
+    overflow: hidden;
+    background-color: #f1faf1;
+}
+#reg-new .wrapper{
+    position: relative;
+    padding: 28px 0 4px 0;
+    overflow: visible;
+    zoom: 1;
+}
+#reg-new .wrapper:before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("../img/doubanapp4.png") no-repeat left top;
+    z-index: 0;
+}
+#reg-new .wrapper .login{
+    float: right;
+    width: 270px;
+    margin-bottom: 15px;
+    font-size: 0;
+    z-index: 2;
+}
+#reg-new .wrapper .login .item{
+    position: relative;
+    margin-bottom: 4px;
+}
+#reg-new .wrapper .login .item-account{
+    vertical-align: top;
+    text-align: left;
+    font-size: 0;
+}
+#reg-new .wrapper .login .inp{
+    border: 1px solid #DBE5DB;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width: 252px;
+    padding: 0 8px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    outline: none;
+}
+#reg-new .wrapper .login .item-submit{
+    margin-top: 6px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 0;
+}
+#reg-new .wrapper .login .item-submit .btn-submit{
+    width: 89px;
+    height: 30px;
+    font-size: 12px;
+    padding: 0 22px;
+    background-color: #30A080;
+    border: none;
+    border-radius: 2px;
+    border-color: #30A080;
+    color: #fff;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+#reg-new .wrapper .login .item-submit .btn-submit:hover{
+    background-color: #2a8c70;
+}
+#reg-new .wrapper .login .lnk-signup{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 87px;
+    font-size: 12px;
+    line-height: 1;
+    padding: 9px 22px 7px;
+    margin-left: 4px;
+    border: 1px solid #30A080;
+    border-radius: 2px;
+    color: #30A080;
+    box-sizing: content-box;
+}
+#reg-new .wrapper .item-action{
+    font-size: 12px;
+    margin-top: 8px;
+    overflow: hidden;
+    color: #666;
+}
+#reg-new .wrapper .item-action #rememberme{
+    vertical-align: middle;
+}
+#reg-new .wrapper .item-action ul{
+    float: right;
+}
+#reg-new .wrapper .item-action ul li{
+    display: inline-block;
+    margin-left: 5px;
+}
+#reg-new .wrapper .app{
+    position: absolute;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 430px;
+    zoom: 1;
+}
+#reg-new .wrapper .app .app-title{
+    margin: 7px 0;
+    font-size: 25px;
+    color: #111;
+    font-weight: bold;
+    line-height: 24px;
+}
+#reg-new .wrapper .app .app-slogan{
+    margin: 0 0 18px;
+    font-size: 0;
+    text-align: justify;
+}
+#reg-new .wrapper .app .app-slogan:after{
+    content:"";
+    display: inline-block;
+    width: 100%;
+}
+#reg-new .wrapper .app .app-slogan span{
+    font-size: 12px;
+}
+#reg-new .wrapper .app .lnk-download{
+    display: inline-block;
+    zoom: 1;
+    padding: 9px 21px;
+    margin-right: 2px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1;
+    background-color: #00B51D;
+}
+#reg-new .wrapper .app .app-qr{
+    display: inline-block;
+    zoom: 1;
+    position: relative;
+    vertical-align: middle;
+}
+#reg-new .wrapper .app .app-qr .lnk-qr{
+    display: inline-block;
+    border: 1px solid #00B51D;
+    font-size: 0;
+    border-radius: 2px;
+    zoom: 1;
+}
+/*=======================
+  公共的样式部分
+  =====================*/
+.container .section{
+    /*padding: 20px 0;*/
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+.container .section .wrapper{
+    zoom: 1;
+}
+.section:nth-child(2n){
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+/*广告*/
+.ad{
+    position: relative;
+    font-size: 0;
+    margin-bottom: 10px;
+}
+.ad a img{
+    width: 950px;
+    height: 90px;
+}
+.ad .ad-title{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 1;
+    font-size: 12px;
+    text-align: center;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.298039);
+    color: #fff;
+}
+/*左侧侧边栏*/
+.section .sidenav{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    padding: 0;
+}
+.section .sidenav .section-title a{
+    font-size: 24px;
+}
+.section .sidenav .side-links li{
+    position: relative;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.section .sidenav .side-links li .new{
+    position: relative;
+    top: -5px;
+}
+.app-icon{
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #999;
+    background: url("../img/app_icons_50_10.jpg") no-repeat;
+}
+/*右侧侧边栏*/
+.container .section .wrapper .side{
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+.list li{
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    font-size: 12px;
+    width: 24.4%;
+    margin-top: 10px;
+    text-align: center;
+}
+.tags li{
+    width: 4em;
+    margin-top: 4px;
+    text-align: left;
+}
+.cate{
+    margin-bottom: 10px;
+}
+.cate ul{
+    margin-left: -10px;
+}
+.cate li{
+    display: inline-block;
+    zoom: 1;
+    margin-left: 10px;
+}
+/*中间主要内容*/
+.container .section .wrapper .main{
+    overflow: hidden;
+    zoom: 1;
+}
+.mod{
+    width: auto;
+    margin-bottom: 20px;
+}
+h2{
+    font: 15px Arial,Helvetica,sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+.p1{
+    font: 12px Arial,Helvetica,sans-serif;
+    color: #666666;
+    line-height: 1.5;
+}
+a.bn-link{
+    display: inline-block;
+    border: 0;
+    border-radius: 2px;
+    padding: 2px 10px;
+}
+.lnk-icon{
+    display: block;
+}
+/*===========================
+  热点内容、线上活动部分 sns
+  ==========================*/
+/*侧边栏：线上活动*/
+.container .sns .wrapper .side .title{
+    margin-top: 10px;
+}
+.container .sns .wrapper .side div img{
+    width: 265px;
+}
+.container .sns .side .online li .time,
+.container .sns .side .online li .num{
+    color: #999;
+    margin: 0;
+    padding: 0;
+}
+/*主要内容：热点内容*/
+.container .sns .main .albums{
+    float: left;
+    width: 350px;
+    margin-right: 30px;
+    color: #999;
+    font-size: 0;
+}
+.container .sns .main .albums ul{
+    margin: -10px 0 0 -10px;
+}
+.sns .albums li{
+    display: inline-block;
+    zoom: 1;
+    width: 170px;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+}
+.sns .notes{
+    overflow: hidden;
+    zoom: 1;
+    color: #666;
+}
+.sns .notes li{
+    margin-top: 12px;
+    word-wrap: break-word;
+}
+.sns .notes li.first p{
+    margin: 0;
+    padding: 0;
+}
+/*===========================
+  电影
+  ==========================*/
+/*电影部分右侧栏*/
+#movie .movie-charts li{
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eaeaea;
+}
+/*电影部分中间主要内容*/
+#movie .movie-list .btn-ticket{
+    background-color: #1c8bd0;
+    color: #fff;
+}
+/*===========================
+  小组
+  ==========================*/
+/*电影部分右侧栏*/
+#group .cate .cate-label a{
+    color: #333;
+}
+#group .cate .cate-label{
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+/*电影部分中间主要内容*/
+#group .group-list ul{
+    margin-left: -30px;
+    margin-top: -30px;
+}
+#group .group-list li{
+    width: 248px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: left;
+    overflow: hidden;
+    zoom: 1;
+    color: #999;
+}
+#group .group-list li .pic{
+    float: left;
+    margin-right: 15px;
+}
+#group .group-list li p{
+    margin: 0;
+}
+/*===========================
+  读书
+  ==========================*/
+#book a{
+    color: #333333;
+}
+/*读书部分左侧栏*/
+#bool .sidenav .app-list{
+    margin-top: 20px;
+}
+#book .app-icon-read{
+    background-position: 0 0;
+}
+/*读书部分右侧栏*/
+#book .book-cate-mod{
+    padding-top: 10px;
+    margin: 0 0 10px 0;
+    border-top: 1px solid #eaeaea;
+}
+#book .book-cate-first{
+    border: 0;
+}
+#book .book-cate .cate-label{
+    color: #999;
+}
+/*读书部分中间主要部分*/
+#book .main .book-list .bn-link{
+    background-color: #999a95;
+    color: #fff;
+}
+#book .main .book-list .author{
+    margin: 8px;
+}
+#book .book-list .pic{
+    height: 148px;
+    overflow: hidden;
+}
+#book .book-list .pic img{
+    height: 100%;
+}
+/*===========================
+  footer
+  ==========================*/
+footer{
+    overflow: hidden;
+    margin-top: 30px;
+    zoom: 1;
+    color: #999;
+}
+footer .wrapper{
+    position: relative;
+    padding: 14px 0;
+    border-top: 1px dashed #dcdcdc;
+}
+footer .fleft img{
+    vertical-align: middle;
+}
+footer .fright{
+    position: absolute;
+    top: 14px;
+    right: 0;
+}

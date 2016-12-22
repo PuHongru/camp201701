@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>仿豆瓣首页</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/task3.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-primary">
+            <h1>
+                <a href="#" title="豆瓣首页">豆瓣</a>
+            </h1>
+            <div class="search">
+                <form>
+                    <span class="input">
+                        <input type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小组、小站、成员">
+                    </span>
+                    <span class="search-btn">
+                        <input type="submit" value="搜索">
+                    </span>
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="lnk-book" title="读书">读书</a></li>
+                    <li><a href="#" class="lnk-movie" title="电影">电影</a></li>
+                    <li><a href="#" class="lnk-music" title="音乐">音乐</a></li>
+                    <li><a href="#" class="lnk-group" title="小组">小组</a></li>
+                    <li><a href="#" class="lnk-location" title="同城">同城</a></li>
+                    <li><a href="#" class="lnk-FM" title="FM">FM</a></li>
+                    <li><a href="#" class="lnk-dongxi" title="东西">東西</a></li>
+                    <li><a href=# class="lnk-market" title="市集">市集</a></li>
+                </ul>
+                <span></span>
+            </nav>
+        </div>
+    </header>
+    <div id="reg-new">
+        <div class="wrapper clearfix">
+            <div class="login">
+                <form>
+                    <div class="item item-account">
+                        <input class="inp" type="text" maxlength="60" name="username" placeholder="邮箱/手机号" required>
+                    </div>
+                    <div class="item item-passwd">
+                        <input class="inp" type="password" maxlength="60" name="password" placeholder="密码" required>
+                    </div>
+                    <div class="item item-submit">
+                        <input class="btn-submit" type="submit" name="submit" value="登录豆瓣">
+                        <a href="#" title="注册账号" class="lnk-signup">注册账号</a>
+                    </div>
+                    <div class="item item-action">
+                        <input type="checkbox" name="rememberme" id="rememberme"/>
+                        <label for="rememberme">记住我</label>
+                        <ul>
+                            <li><a href="#" title="微信登录"><img src="img/wechat.png" alt="微信登录"></a></li>
+                            <li><a href="#" title="微博登录"><img src="img/weibo.png" alt="微博登录"></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="app">
+                <h2 class="app-title">豆瓣 4.0</h2>
+                <p class="app-slogan">
+                    <span>我们的精神角落</span>
+                </p>
+                <a href="#" title="download" class="lnk-download">下载豆瓣 APP</a>
+                <div class="app-qr">
+                    <a href="javascript:void 0;" class="lnk-qr" id="expand-qr" title="APP二维码">
+                        <img src="img/icon_qrcode_green.png" alt="二维码" width="28" height="28">
+                    </a>
+                    <!--<div id="app-qr-expand">
+                        <img src="img/doubanapp_qrcode.png" alt="app二维码">
+                        <p>iOS/Android 扫码直接下载</p>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--热点内容、线上活动区-->
+        <section class="sns section">
+            <div class="wrapper clearfix">
+                <!--广告-->
+                <div class="ad">
+                    <a href="javascript:void(0);"><img src="img/0743a1cad9d07ae.jpg" alt="广告"></a>
+                    <div class="ad-title">广告</div>
+                </div>
+                <!--侧边栏，线上活动-->
+                <aside class="side">
+                        <!--广告-->
+                        <div>
+                            <a href="javascript:void(0)" title="广告">
+                                <img src="img/file-1431585796.jpg" alt="广告">
+                            </a>
+                        </div>
+                        <!--线上活动-->
+                        <h2>
+                            线上活动&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多线上活动">更多</a>)</span>
+                        </h2>
+                        <div class="online">
+                            <ul>
+                                <li>
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="线上活动题目">午後的一張相片</a>
+                                    </div>
+                                    <div class="description">
+                                        <p class="time">时间：11月30日 - 1月30日</p>
+                                        <p class="num">388人参加</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="线上活动题目">❤看截图猜电影秋季篇❤</a>
+                                    </div>
+                                    <div class="description">
+                                        <p class="time">时间：12月2日 - 3月1日 </p>
+                                        <p class="num">308人参加</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="线上活动题目">征片活动 晒出你拍出悲伤孤独感十足的黑白照片</a>
+                                    </div>
+                                    <div class="description">
+                                        <p class="time">时间：10月31日 - 12月30日</p>
+                                        <p class="num">471人参加</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                <!--热点内容-->
+                <main class="main">
+                    <div class="mod clearfix">
+                        <h2>
+                            热点内容&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多热点内容">更多</a>)</span>
+                        </h2>
+                        <div class="albums">
+                            <ul>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0)" title="相册">
+                                            <img src="img/p2399164656.jpg" alt="相册封面">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)" title="相册">壹佰叁拾叁卷里的全部故事</a>
+                                    <span class="num">107张照片</span>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0)" title="相册">
+                                            <img src="img/p2325089891.jpg" alt="相册封面">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)" title="相册">2016 缅甸</a>
+                                    <span class="num">123张照片</span>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0)" title="相册">
+                                            <img src="img/p2396157133.jpg" alt="相册封面">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)" title="相册">开一家属于我们的小店</a>
+                                    <span class="num">24张照片</span>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0)" title="相册">
+                                            <img src="img/p2398073479.jpg" alt="相册封面">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)" title="相册">成都你慢点走</a>
+                                    <span class="num">21张照片</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="notes">
+                            <ul>
+                                <li class="first">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="日记">花娘</a>
+                                    </div>
+                                    <div class="author">邓安庆的日记</div>
+                                    <p>大二暑假，来远叔来找我，“我缺个小工，你来不来？”我正闲极无聊，一听有事情做...</p>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">什么是好的动物园？</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">重寻小津</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">老生常谈话系扣</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">批判一只无耻的不要脸的猫</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">一只猫救我于色狼之手</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">因程序员的怨念而生？聊聊史上第一个游戏彩蛋</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">廣西和我，24年來第一個日出</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">女学霸当中介</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日记">贝聿铭的黑历史，竟然都发生在同一座城市里……</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!--电影-->
+        <section id="movie" class="section">
+            <div class="wrapper clearfix">
+                <!--左侧栏-->
+                <aside class="sidenav">
+                    <h2 class="section-title">
+                        <a href="javascript:void(0)" title="电影">电影</a>
+                    </h2>
+                    <div class="side-links">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" title="影讯和购票">影讯&购票</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="选电影">选电影</a>
+                                <img src="img/new_menu.gif" alt="new" class="new">
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="电视剧">电视剧</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="排行榜">排行榜</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="分类">分类</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="影评">影评</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="预告片">预告片</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="问答">问答</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--右侧栏-->
+                <aside class="side">
+                    <div class="mod">
+                        <h2>
+                            影片分类&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多影片">更多</a>)</span>
+                        </h2>
+                        <div class="tags list">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" title="爱情">爱情</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="喜剧">喜剧</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="动画">动画</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="剧情">剧情</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="科幻">科幻</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="动作">动作</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="经典">经典</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="悬疑">悬疑</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="青春">青春</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="犯罪">犯罪</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="惊悚">惊悚</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="文艺">文艺</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="搞笑">搞笑</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="纪录片">纪录片</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="励志">励志</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="恐怖">恐怖</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="战争">战争</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="短片">短片</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="美国">美国</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="日本">日本</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="香港">香港</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="英国">英国</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="中国">中国</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="法国">法国</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="韩国">韩国</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="台湾">台湾</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="德国">德国</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="中国大陆">中国大陆</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <h2>
+                            近期热门&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多热门">更多</a>)</span>
+                        </h2>
+                        <div class="list1 movie-charts">
+                            <ol>
+                                <li>
+                                    <a href="javascript:void(0)" title="比海更深">比海更深</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="单身日记：好孕来袭">单身日记：好孕来袭</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="濑户内海">濑户内海</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="从你的全世界路过">从你的全世界路过</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="豪勇七蛟龙">豪勇七蛟龙</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="新哥斯拉">新哥斯拉</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="七月与安生">七月与安生</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="会计刺客">会计刺客</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="斯诺登">斯诺登</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="酒神小姐">酒神小姐</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </aside>
+                <!--中间主要内容-->
+                <main class="main">
+                    <h2>
+                        正在热映&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多热映">更多</a>)</span>
+                    </h2>
+                    <div class="movie-list list">
+                        <ul>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">
+                                        <img src="img/p2397337958.jpg" alt="血战钢锯岭">
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <a href="javascript:void(0)" title="血战钢锯岭">血战钢锯岭</a>
+                                </div>
+                                <div class="rating">
+                                    <span class="allstar45"></span>
+                                    <i>8.8</i>
+                                </div>
+                                <a href="javascript:void(0)" title="选座购票" class="btn-ticket bn-link">选座购票</a>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!--小组-->
+        <section id="group" class="section">
+            <div class="wrapper clearfix">
+                <!--左侧栏-->
+                <aside class="sidenav">
+                    <h2 class="section-title">
+                        <a href="javascript:void(0)" title="小组">小组</a>
+                    </h2>
+                    <div class="side-links">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" title="精选">精选</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="文化">文化</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="行摄">行摄</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="娱乐">娱乐</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="时尚">时尚</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="生活">生活</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" title="科技">科技</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--右侧栏-->
+                <aside class="side">
+                    <div class="mod">
+                        <h2>
+                            小组分类&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.
+                        </h2>
+                        <div class="cate group-cate">
+                            <ul>
+                            <li class="cate-label">
+                                <a href="javascript:void(0)" title="兴趣">兴趣»</a>
+                            </li>
+                            <li><a href="javascript:void(0)" title="旅行">旅行</a></li>
+                            <li><a href="javascript:void(0)" title="摄影">摄影</a></li>
+                            <li><a href="javascript:void(0)" title="影视">影视</a></li>
+                            <li><a href="javascript:void(0)" title="音乐">音乐</a></li>
+                            <li><a href="javascript:void(0)" title="文学">文学</a></li>
+                            <li><a href="javascript:void(0)" title="游戏">游戏</a></li>
+                            <li><a href="javascript:void(0)" title="动漫">动漫</a></li>
+                            <li><a href="javascript:void(0)" title="运动">运动</a></li>
+                            <li><a href="javascript:void(0)" title="戏曲">戏曲</a></li>
+                            <li><a href="javascript:void(0)" title="桌游">桌游</a></li>
+                            <li><a href="javascript:void(0)" title="怪癖">怪癖</a></li>
+                        </ul>
+                        </div>
+                        <div class="cate group-cate">
+                            <ul>
+                                <li class="cate-label">
+                                    <a href="javascript:void(0)" title="生活">生活»</a>
+                                </li>
+                                <li><a href="javascript:void(0)" title="健康">健康</a></li>
+                                <li><a href="javascript:void(0)" title="美食">美食</a></li>
+                                <li><a href="javascript:void(0)" title="宠物">宠物</a></li>
+                                <li><a href="javascript:void(0)" title="美容">美容</a></li>
+                                <li><a href="javascript:void(0)" title="化妆">化妆</a></li>
+                                <li><a href="javascript:void(0)" title="护肤">护肤</a></li>
+                                <li><a href="javascript:void(0)" title="服饰">服饰</a></li>
+                                <li><a href="javascript:void(0)" title="公益">公益</a></li>
+                                <li><a href="javascript:void(0)" title="家庭">家庭</a></li>
+                                <li><a href="javascript:void(0)" title="育儿">育儿</a></li>
+                                <li><a href="javascript:void(0)" title="汽车">汽车</a></li>
+                            </ul>
+                        </div>
+                        <div class="cate group-cate">
+                            <ul>
+                                <li class="cate-label">
+                                    <a href="javascript:void(0)" title="购物">购物»</a>
+                                </li>
+                                <li><a href="javascript:void(0)" title="淘宝">淘宝</a></li>
+                                <li><a href="javascript:void(0)" title="二手">二手</a></li>
+                                <li><a href="javascript:void(0)" title="团购">团购</a></li>
+                                <li><a href="javascript:void(0)" title="数码">数码</a></li>
+                                <li><a href="javascript:void(0)" title="品牌">品牌</a></li>
+                                <li><a href="javascript:void(0)" title="文具">文具</a></li>
+                            </ul>
+                        </div>
+                        <div class="cate group-cate">
+                            <ul>
+                                <li class="cate-label">
+                                    <a href="javascript:void(0)" title="社会">社会»</a>
+                                </li>
+                                <li><a href="javascript:void(0)" title="求职">求职</a></li>
+                                <li><a href="javascript:void(0)" title="租房">租房</a></li>
+                                <li><a href="javascript:void(0)" title="励志">励志</a></li>
+                                <li><a href="javascript:void(0)" title="留学">留学</a></li>
+                                <li><a href="javascript:void(0)" title="出国">出国</a></li>
+                                <li><a href="javascript:void(0)" title="理财">理财</a></li>
+                                <li><a href="javascript:void(0)" title="传媒">传媒</a></li>
+                                <li><a href="javascript:void(0)" title="创业">创业</a></li>
+                                <li><a href="javascript:void(0)" title="考试">考试</a></li>
+                            </ul>
+                        </div>
+                        <div class="cate group-cate">
+                            <ul>
+                                <li class="cate-label">
+                                    <a href="javascript:void(0)" title="艺术">艺术»</a>
+                                </li>
+                                <li><a href="javascript:void(0)" title="设计">设计</a></li>
+                                <li><a href="javascript:void(0)" title="手工">手工</a></li>
+                                <li><a href="javascript:void(0)" title="展览">展览</a></li>
+                                <li><a href="javascript:void(0)" title="曲艺">曲艺</a></li>
+                                <li><a href="javascript:void(0)" title="舞蹈">舞蹈</a></li>
+                                <li><a href="javascript:void(0)" title="雕塑">雕塑</a></li>
+                                <li><a href="javascript:void(0)" title="纹身">纹身</a></li>
+                            </ul>
+                        </div>
+                        <div class="cate group-cate">
+                            <ul>
+                                <li class="cate-label">
+                                    <a href="javascript:void(0)" title="学术">学术»</a>
+                                </li>
+                                <li><a href="javascript:void(0)" title="人文">人文</a></li>
+                                <li><a href="javascript:void(0)" title="社科">社科</a></li>
+                                <li><a href="javascript:void(0)" title="自然">自然</a></li>
+                                <li><a href="javascript:void(0)" title="建筑">建筑</a></li>
+                                <li><a href="javascript:void(0)" title="国学">国学</a></li>
+                                <li><a href="javascript:void(0)" title="语言">语言</a></li>
+                                <li><a href="javascript:void(0)" title="宗教">宗教</a></li>
+                                <li><a href="javascript:void(0)" title="哲学">哲学</a></li>
+                                <li><a href="javascript:void(0)" title="软件">软件</a></li>
+                                <li><a href="javascript:void(0)" title="硬件">硬件</a></li>
+                                <li><a href="javascript:void(0)" title="互联网">互联网</a></li>
+                            </ul>
+                        </div>
+                        <div class="cate group-cate">
+                            <ul>
+                                <li class="cate-label">
+                                    <a href="javascript:void(0)" title="情感">情感»</a>
+                                </li>
+                                <li><a href="javascript:void(0)" title="恋爱">恋爱</a></li>
+                                <li><a href="javascript:void(0)" title="心情">心情</a></li>
+                                <li><a href="javascript:void(0)" title="心理学">心理学</a></li>
+                                <li><a href="javascript:void(0)" title="星座">星座</a></li>
+                                <li><a href="javascript:void(0)" title="塔罗">塔罗</a></li>
+                                <li><a href="javascript:void(0)" title="LES">LES</a></li>
+                                <li><a href="javascript:void(0)" title="GAY">GAY</a></li>
+                            </ul>
+                        </div>
+                        <div class="cate group-cate">
+                            <ul>
+                                <li class="cate-label">
+                                    <a href="javascript:void(0)" title="闲聊">闲聊»</a>
+                                </li>
+                                <li><a href="javascript:void(0)" title="吐槽">吐槽</a></li>
+                                <li><a href="javascript:void(0)" title="笑话">笑话</a></li>
+                                <li><a href="javascript:void(0)" title="直播">直播</a></li>
+                                <li><a href="javascript:void(0)" title="八卦">八卦</a></li>
+                                <li><a href="javascript:void(0)" title="发泄">发泄</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <!--中间主要内容-->
+                <main class="main">
+                    <h2>
+                        热门小组&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多小组">更多</a>)</span>
+                    </h2>
+                    <div class="group-list list">
+                        <ul>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic">
+                                    <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">
+                                        <img src="img/g536786-2.jpg" alt="黑五双十二 | 我跟你拼了！">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <div class="title">
+                                        <a href="javascript:void(0)" title="黑五双十二 | 我跟你拼了！">黑五双十二 | 我跟你拼了！</a>
+                                    </div>
+                                    <p class="num">17840个成员</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </section>
+        <!--读书-->
+        <section id="book" class="section">
+            <div class="wrapper clearfix">
+                <!--左侧栏-->
+                <aside class="sidenav">
+                    <div class="mod">
+                        <h2 class="section-title">
+                            <a href="javascript:void(0)" title="读书">读书</a>
+                        </h2>
+                        <div class="side-links">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" title="分类浏览">分类浏览</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="阅读">阅读</a>
+                                    <img src="img/new_menu.gif" alt="new" class="new">
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="作者">作者</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="书评">书评</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" title="购书单">购书单</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="app-list">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" title="豆瓣阅读APP" class="lnk-icon">
+                                    <i class="app-icon app-icon-read"></i>
+                                </a>
+                                <a href="javascript:void(0)" title="豆瓣阅读">豆瓣阅读</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!--右侧栏-->
+                <aside class="side">
+                    <div class="mod">
+                        <h2>
+                            热门标签&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多标签">更多</a>)</span>
+                        </h2>
+                        <div class="book-cate-mod book-cate-first">
+                            <div class="cate book-cate">
+                                <ul>
+                                    <li class="cate-label">[文学]</li>
+                                    <li><a href="javascript:void(0);" title="小说">小说</a></li>
+                                    <li><a href="javascript:void(0);" title="随笔">随笔</a></li>
+                                    <li><a href="javascript:void(0);" title="日本文学">日本文学</a></li>
+                                    <li><a href="javascript:void(0);" title="散文">散文</a></li>
+                                    <li><a href="javascript:void(0);" title="诗歌">诗歌</a></li>
+                                    <li><a href="javascript:void(0);" title="童话">童话</a></li>
+                                    <li><a href="javascript:void(0);" title="名著">名著</a></li>
+                                    <li><a href="javascript:void(0);" title="港台">港台</a></li>
+                                    <li><a href="javascript:void(0);" title="更多">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="book-cate-mod">
+                            <div class="cate book-cate">
+                                <ul>
+                                    <li class="cate-label">[流行]</li>
+                                    <li><a href="javascript:void(0);" title="漫画">漫画</a></li>
+                                    <li><a href="javascript:void(0);" title="绘本">绘本</a></li>
+                                    <li><a href="javascript:void(0);" title="推理">推理</a></li>
+                                    <li><a href="javascript:void(0);" title="青春">青春</a></li>
+                                    <li><a href="javascript:void(0);" title="言情">言情</a></li>
+                                    <li><a href="javascript:void(0);" title="科幻">科幻</a></li>
+                                    <li><a href="javascript:void(0);" title="武侠">武侠</a></li>
+                                    <li><a href="javascript:void(0);" title="奇幻">奇幻</a></li>
+                                    <li><a href="javascript:void(0);" title="更多">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="book-cate-mod">
+                            <div class="cate book-cate">
+                                <ul>
+                                    <li class="cate-label">[文化]</li>
+                                    <li><a href="javascript:void(0);" title="历史">历史</a></li>
+                                    <li><a href="javascript:void(0);" title="哲学">哲学</a></li>
+                                    <li><a href="javascript:void(0);" title="传记">传记</a></li>
+                                    <li><a href="javascript:void(0);" title="设计">设计</a></li>
+                                    <li><a href="javascript:void(0);" title="建筑">建筑</a></li>
+                                    <li><a href="javascript:void(0);" title="电影">电影</a></li>
+                                    <li><a href="javascript:void(0);" title="回忆录">回忆录</a></li>
+                                    <li><a href="javascript:void(0);" title="音乐">音乐</a></li>
+                                    <li><a href="javascript:void(0);" title="更多">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="book-cate-mod">
+                            <div class="cate book-cate">
+                                <ul>
+                                    <li class="cate-label">[生活]</li>
+                                    <li><a href="javascript:void(0);" title="旅行">旅行</a></li>
+                                    <li><a href="javascript:void(0);" title="励志">励志</a></li>
+                                    <li><a href="javascript:void(0);" title="职场">职场</a></li>
+                                    <li><a href="javascript:void(0);" title="美食">美食</a></li>
+                                    <li><a href="javascript:void(0);" title="教育">教育</a></li>
+                                    <li><a href="javascript:void(0);" title="灵修">灵修</a></li>
+                                    <li><a href="javascript:void(0);" title="健康">健康</a></li>
+                                    <li><a href="javascript:void(0);" title="家居">家居</a></li>
+                                    <li><a href="javascript:void(0);" title="更多">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="book-cate-mod">
+                            <div class="cate book-cate">
+                                <ul>
+                                    <li class="cate-label">[经管]</li>
+                                    <li><a href="javascript:void(0);" title="经济学">经济学</a></li>
+                                    <li><a href="javascript:void(0);" title="管理">管理</a></li>
+                                    <li><a href="javascript:void(0);" title="商业">商业</a></li>
+                                    <li><a href="javascript:void(0);" title="金融">金融</a></li>
+                                    <li><a href="javascript:void(0);" title="营销">营销</a></li>
+                                    <li><a href="javascript:void(0);" title="理财">理财</a></li>
+                                    <li><a href="javascript:void(0);" title="股票">股票</a></li>
+                                    <li><a href="javascript:void(0);" title="企业史">企业史</a></li>
+                                    <li><a href="javascript:void(0);" title="更多">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="book-cate-mod">
+                            <div class="cate book-cate">
+                                <ul>
+                                    <li class="cate-label">[科技]</li>
+                                    <li><a href="javascript:void(0);" title="科普">科普</a></li>
+                                    <li><a href="javascript:void(0);" title="互联网">互联网</a></li>
+                                    <li><a href="javascript:void(0);" title="编程">编程</a></li>
+                                    <li><a href="javascript:void(0);" title="交互设计">交互设计</a></li>
+                                    <li><a href="javascript:void(0);" title="算法">算法</a></li>
+                                    <li><a href="javascript:void(0);" title="通信">通信</a></li>
+                                    <li><a href="javascript:void(0);" title="神经网络">神经网络</a></li>
+                                    <li><a href="javascript:void(0);" title="更多">更多</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!--中间主要内容-->
+                <main class="main">
+                    <div class="mod">
+                        <h2>
+                            新书速递&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多新书">更多</a>)</span>
+                        </h2>
+                        <div class="book-list list">
+                            <ul>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">
+                                            <img src="img/s29172712.jpg" alt="奥斯卡·瓦奥短暂而奇妙的一生">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">奥斯卡·瓦奥短暂而奇妙的一生</a>
+                                    </div>
+                                    <p class="author">
+                                        [美] 朱诺·迪亚斯
+                                    </p>
+                                    <a href="javascript:void(0);" class="bn-link">免费试读</a>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">
+                                            <img src="img/s29172712.jpg" alt="奥斯卡·瓦奥短暂而奇妙的一生">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">奥斯卡·瓦奥短暂而奇妙的一生</a>
+                                    </div>
+                                    <p class="author">
+                                        [美] 朱诺·迪亚斯
+                                    </p>
+                                    <a href="javascript:void(0);" class="bn-link">免费试读</a>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">
+                                            <img src="img/s29172712.jpg" alt="奥斯卡·瓦奥短暂而奇妙的一生">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">奥斯卡·瓦奥短暂而奇妙的一生</a>
+                                    </div>
+                                    <p class="author">
+                                        [美] 朱诺·迪亚斯
+                                    </p>
+                                    <a href="javascript:void(0);" class="bn-link">免费试读</a>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">
+                                            <img src="img/s29172712.jpg" alt="奥斯卡·瓦奥短暂而奇妙的一生">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="奥斯卡·瓦奥短暂而奇妙的一生">奥斯卡·瓦奥短暂而奇妙的一生</a>
+                                    </div>
+                                    <p class="author">
+                                        [美] 朱诺·迪亚斯
+                                    </p>
+                                    <a href="javascript:void(0);" class="bn-link">免费试读</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <h2>
+                            原创数字作品&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.<span class="p1">&nbsp;.(<a href="javascript:void(0);" title="查看更多原创数字作品">更多</a>)</span>
+                        </h2>
+                        <div class="book-list list">
+                            <ul>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="西斯空计划">
+                                            <img src="img/27665499.jpg" alt="西斯空计划">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="西斯空计划">西斯空计划</a>
+                                    </div>
+                                    <div class="author">noc</div>
+                                    <div class="price">1.99元</div>
+                                    <a href="javascript:void(0);" title="免费试读" class="bn-link">免费试读</a>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="西斯空计划">
+                                            <img src="img/27665499.jpg" alt="西斯空计划">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="西斯空计划">西斯空计划</a>
+                                    </div>
+                                    <div class="author">noc</div>
+                                    <div class="price">1.99元</div>
+                                    <a href="javascript:void(0);" title="免费试读" class="bn-link">免费试读</a>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="西斯空计划">
+                                            <img src="img/27665499.jpg" alt="西斯空计划">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="西斯空计划">西斯空计划</a>
+                                    </div>
+                                    <div class="author">noc</div>
+                                    <div class="price">1.99元</div>
+                                    <a href="javascript:void(0);" title="免费试读" class="bn-link">免费试读</a>
+                                </li>
+                                <li>
+                                    <div class="pic">
+                                        <a href="javascript:void(0);" title="西斯空计划">
+                                            <img src="img/27665499.jpg" alt="西斯空计划">
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="javascript:void(0);" title="西斯空计划">西斯空计划</a>
+                                    </div>
+                                    <div class="author">noc</div>
+                                    <div class="price">1.99元</div>
+                                    <a href="javascript:void(0);" title="免费试读" class="bn-link">免费试读</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <span class="fright">
+                <a href="https://www.douban.com/about" title="关于豆瓣">关于豆瓣</a>
+                ·
+                <a href="https://www.douban.com/jobs" title="在豆瓣工作">在豆瓣工作</a>
+                ·
+                <a href="https://www.douban.com/about?topic=contactus" title="联系我们">联系我们</a>
+                ·
+                <a href="https://www.douban.com/about?policy=disclaimer" title="免责声明">免责声明</a>
+                ·
+                <a href="https://help.douban.com/?app=main" title="帮助中心">帮助中心</a>
+                ·
+                <a href="https://www.douban.com/doubanapp/" title="移动应用">移动应用</a>
+                ·
+                <a href="https://www.douban.com/partner/" title="豆瓣广告">豆瓣广告</a>
+            </span>
+            <span id="icp" class="fleft">
+                © 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+                <br>
+                <a href="http://www.miibeian.gov.cn/" title="京ICP证090015号">京ICP证090015号</a>
+                京ICP备11027288号 网络视听许可证<a href="https://www.douban.com/about?topic=licence">0110418</a>号
+                <br>
+                京网文[2015]2026-368号<img src="img/biaoshi.gif" alt="absmiddle"> <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502000728">京公网安备11010502000728</a>  新出网证(京)字129号
+                <br>
+                违法和不良信息举报电话：4008353331 <img src="img/file-1423193113.png" height="16px">
+                <br>
+                <img src="img/jubao.png" width="15px"><a href="http://www.12377.cn/">中国互联网举报中心</a> 电话：12377 <a href="https://img1.doubanio.com/img/files/file-1478594087.jpg">《食品流通许可证》许可证：SP1101051510347287</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蒲蒲蒲——个人简历</title>
+    <link rel="stylesheet" href="css/task1.css">
+</head>
+<body>
+<div id="wrapper">
+    <!--bio title-->
+    <h1 id="titleName" class="section-head titleName">蒲蒲蒲</h1>
+    <!--bio-->
+    <div id="bio">
+        <h2>前端开发工程师</h2>
+        <div id="socialIcon">
+            <a class="social-icon" target="_blank" id="githubIcon" href="#"></a>
+            <a class="social-icon" target="_blank" id="blogIcon" href="#"></a>
+        </div>
+        <p>这是一个在2016年年中开始接触前端的小白，从什么都不会开始，到会做简单的页面，再到可以交互，越来越爱前端这个职业。要继续在前端的道路上越走越远~</p>
+    </div>
+    <!--skill title-->
+    <h2 id="tools" class="section-head titleName">技能</h2>
+    <!--skill-->
+    <ul id="skills" class="ready">
+        <li id="skill1" class="s80">
+            <span>HTML</span>
+        </li>
+        <li id="skill2" class="s80">
+            <span>CSS</span>
+        </li>
+        <li id="skill3" class="s70">
+            <span>JavaScript</span>
+        </li>
+        <li id="skill4" class="s60">
+            <span>jQuery</span>
+        </li>
+        <li id="skill5" class="s60">
+            <span>bootstrap</span>
+        </li>
+        <li id="skill6" class="s40">
+            <span>Nodejs+Express</span>
+        </li>
+    </ul>
+    <!--experience title-->
+    <h2 id="experienceTitle" class="section-head titleName">项目经历</h2>
+    <!--experience-->
+    <ul id="experience">
+        <li>
+            <h3>使用Express + Mongodb搭建多人博客系统</h3>
+            <ul class="details">
+                <li>目前实现了用户注册，登入/登出，发表文章，查看主页与文章页功能</li>
+                <li>使用Ajax异步验证注册表单信息</li>
+                <li>实现了文章按时间发表顺序排列，验证表单等功能</li>
+            </ul>
+        </li>
+        <li>
+            <h3>仿理财宝首页响应式页面</h3>
+            <ul class="details">
+                <li>使用HTML语义化标签，使得有利于搜索引擎优化，提升了页面无障碍性</li>
+                <li>使用了响应式布局，使得页面在小屏幕，中屏幕，大屏幕进行了不同响应式布局</li>
+                <li>对轮播图中图片进行了图片优化，实现了根据设备大小加载不同的图片，使得页面既快速又不会影响用户的体验</li>
+            </ul>
+        </li>
+    </ul>
+    <!--education title-->
+    <h2 id="educationTitle" class="section-head titleName">教育背景</h2>
+    <!--education-->
+    <div id="education">
+        <ul>
+            <li class="first">本科</li>
+            <li>2010. 9—2014. 7</li>
+            <li>北京邮电大学</li>
+            <li>计算机学院</li>
+            <li>专业：信息安全</li>
+        </ul>
+        <ul>
+            <li class="first">硕士</li>
+            <li>2015. 9—2018. 4</li>
+            <li>北京邮电大学</li>
+            <li>软件工程学院</li>
+            <li>专业：软件工程</li>
+        </ul>
+    </div>
+    <!--contact me title-->
+    <h2 id="contactMe" class="section-head titleName">联系我</h2>
+    <!--contact me form-->
+    <div id="contactForm" class="contact">
+        <form method="post" class="clearfix">
+            <div class="contact-info">
+                <p>
+                    <label class="small-input" for="name">姓名<span class="required">*</span></label>
+                    <input id="name" type="text" name="name" class="input">
+                </p>
+                <p>
+                    <label class="small-input" for="email">邮箱<span class="required">*</span></label>
+                    <input id="email" type="text" name="email" class="input">
+                </p>
+                <p>
+                    <label class="small-input" for="phone">电话<span class="required">*</span></label>
+                    <input id="phone" type="text" name="phone" class="input">
+                </p>
+            </div>
+            <p class="email-message">
+                <label class="small-input" for="message">消息<span class="required">*</span></label>
+                <textarea id="message" type="text" name="message" class="input"></textarea>
+            </p>
+            <input name="send" id="submitBtn" class="clearfix" type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
+</body>
+</html>

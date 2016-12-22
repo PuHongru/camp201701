@@ -1,0 +1,309 @@
+body{
+    background-color: #f3f3f3;
+    font: 12px/1.2em Helvetica, Arial, sans-serif;
+    background: url("../img/soft_wallpaper.png") repeat;
+    color: #444;
+    height: 100%;
+    width: 100%;
+}
+div,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.required{
+    color: red;
+}
+#wrapper{
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.1);
+    position: relative;
+}
+.section-head{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 12px;
+    border-left: 52px solid #444;
+    /*margin: 60px -60px;*/
+    padding: 1px 0 0 8px;
+    position: relative;
+}
+.titleName{
+    margin: 40px -60px;
+}
+
+@media only screen and (max-width: 800px) {
+    #wrapper{
+        margin: 5vw auto;
+        padding: 8vw;
+    }
+    .titleName {
+        margin: 5vw -8vw;
+    }
+    .section-head{
+        border-left: 8vw solid #444;
+    }
+}
+.section-head:before{
+    content: "";
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: -105px;
+    top: -15px;
+    background: url("../img/icons.png") no-repeat;
+}
+/*简介*/
+#titleName:before{
+    background-position: -90px bottom;
+}
+#bio{
+    position: relative;
+
+}
+#bio h2{
+    font-weight: normal;
+    font-size: 15px;
+}
+#bio #socialIcon{
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    text-align: right;
+}
+#bio #socialIcon .social-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+    display: inline-block;
+    background: url("../img/social.png") no-repeat;
+}
+#bio #socialIcon #githubIcon{
+    background-position: -180px 0;
+}
+#bio #socialIcon #githubIcon:hover{
+    background-position: -180px -30px;
+}
+#bio #socialIcon #blogIcon{
+    background-position: 0 0;
+}
+#bio #socialIcon #blogIcon:hover{
+    background-position: 0 -30px;
+}
+#bio p{
+    margin: 40px auto;
+    padding: 40px 45px;
+    max-width: 560px;
+    background-color: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    line-height: 1.6em;
+}
+@media only screen and (max-width: 800px) {
+    #bio p{
+        margin: 6vw auto;
+        padding: 6vw 7vw;
+    }
+}
+/*技能*/
+#tools:before{
+    background-position: 0 0;
+}
+#skills{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#skills li{
+    display: block;
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    padding: 3px 1.1428571428571428% 0;
+    z-index: 1;
+    border-radius: 5px;
+}
+#skills li:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 5px;
+    line-height: 26px;
+    width: 50px;
+    text-align: right;
+    color: #aaa;
+}
+#skills li.s80{
+    width: 80%;
+}
+#skills li.s70{
+    width: 70%;
+}
+#skills li.s60{
+    width: 60%;
+}
+#skills li.s40{
+    width: 40%;
+}
+#skills li.s80:after{
+    content: "80%";
+}
+#skills li.s70:after{
+    content: "70%";
+}
+#skills li.s60:after{
+    content: "60%";
+}
+#skills li.s40:after{
+    content: "40%";
+}
+/*项目经历*/
+#experienceTitle:before{
+    background-position: -45px top;
+}
+#experience{
+    margin: -10px 0 0 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    list-style-position: inside;
+}
+#experience>li+li{
+    margin-top: 10px;
+}
+#experience li h3{
+    margin: 10px auto;
+}
+#experience .details li{
+    line-height: 16px;
+}
+/*教育背景*/
+#educationTitle:before{
+    background-position: right top;
+}
+#education ul{
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px 50px;
+    max-width: 560px;
+    background-color: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    line-height: 1.6em;
+    position: relative;
+}
+#education ul li{
+    display: inline-block;
+    width: 24%;
+}
+#education ul li.first{
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #444444;
+    color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+@media only screen and (max-width: 800px) {
+    #education ul li.first{
+        min-width: 40px;
+    }
+    #education ul li{
+        min-width: 95px;
+        text-align: center;
+    }
+}
+/*联系我*/
+#contactMe:before{
+    background-position: right bottom;
+}
+label{
+    display: block;
+}
+#contactForm .contact-info{
+    float: left;
+    width: 40%;
+}
+#contactForm .contact-info p{
+    margin-top: 0;
+}
+#contactForm .contact-info input{
+    width: 250px;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color: #666;
+    font-size: 12px;
+}
+#contactForm .email-message{
+    margin: 0 auto 10px 10px;
+    float: right;
+    width: 57%;
+}
+#contactForm .email-message textarea{
+    width: 100%;
+    margin: 5px 0 10px 0;
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    color: #666;
+    font-size: 12px;
+    height: 170px;
+}
+#contactForm #submitBtn{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    background-color: #444;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 12px;
+}
+@media only screen and (max-width: 800px) {
+    #contactForm .contact-info{
+        float: none;
+        width: 80%;
+    }
+    #contactForm .contact-info input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #contactForm .email-message{
+        margin: initial;
+        float: none;
+        width: 80%;
+    }
+    #contactForm .email-message textarea{
+        box-sizing: border-box;
+    }
+    #contactForm #submitBtn{
+        float: none;
+        width: 80%;
+    }
+}

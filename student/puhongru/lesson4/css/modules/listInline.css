@@ -1,0 +1,13 @@
+/*-----------------------------------------------*\
+  li处于一行
+\*-----------------------------------------------*/
+ul{
+  margin: 0;
+  padding: 0;
+}
+.list-inline{
+  list-style: none;
+}
+.list-inline li{
+  display: inline-block;
+}

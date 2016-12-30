@@ -1,0 +1,113 @@
+/**
+* 这是关于页面整体布局的CSS代码，包括了：
+*
+* 1）头部导航栏，头部大图，主体内容，侧边栏，footer的布局，不包括其中的具体样式
+*
+* 2）头部导航栏固定在顶部，主要内容居左显示，侧边栏居右显示，页面缩小时，侧边栏隐藏
+*
+* 3）不同大小屏幕时的布局
+*
+*/
+
+
+/*-----------------------------------------------*\
+  header导航栏布局
+\*-----------------------------------------------*/
+.page--header{
+  position: fixed;
+  top:   0;
+  left:  0;
+  right: 0;
+  height: 40px;
+  height: 8vh;
+  width:  100%;
+  z-index: 999;
+}
+  .navbar--header__left{
+    float: left;
+    height: 100%;
+  }
+    .navbar--header__left a{
+      float: left;
+      display: inline-block;
+      line-height: 40px;
+      line-height: 8vh;
+    }
+
+  .navbar--nav__right{
+    float: right;
+  }
+    .navbar--nav__right li a{
+      display: block;
+      line-height: 40px;
+      line-height: 8vh;
+    }
+
+
+
+
+/*-----------------------------------------------*\
+  头部大图
+\*-----------------------------------------------*/
+.page--header--content{
+
+}
+
+
+
+
+/*-----------------------------------------------*\
+  Main Content
+\*-----------------------------------------------*/
+.container{
+  max-width: 980px;
+  margin:  0 auto 20px;
+  padding: 0 10px;
+  padding: 0 1vw;
+}
+  .mod{
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .post-container{
+    float: left;
+    width: 67%;
+  }
+  .sidebar-container{
+    float: right;
+    width: 25%;
+  }
+  .sidebar-container .aboutme{
+    display: block;
+  }
+    .sidebar-container img{
+      border-radius: 5px;
+    }
+
+  /*小屏幕时，侧边栏变到下面*/
+  @media only screen and (max-width: 800px) {
+    .post-container{
+      float: initial;
+      width: 100%;
+    }
+    .sidebar-container{
+      float: initial;
+      width: 100%;
+    }
+    .sidebar-container .aboutme{
+      display: none;
+    }
+  }
+
+
+
+
+
+/*-----------------------------------------------*\
+  footer
+\*-----------------------------------------------*/
+footer ul,
+footer p{
+  text-align: center;
+}

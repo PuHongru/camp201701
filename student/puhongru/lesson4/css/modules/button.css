@@ -1,0 +1,16 @@
+/**
+* 这里是button的集合，包括前一页/后一页，上一篇/下一篇的样式
+*/
+
+.button{
+  display: block;
+  line-height: 2em;
+  padding: 0 2em;
+  border: 1px solid #404040;
+  color: #404040;
+  border-radius: 5px;
+}
+.button:hover{
+  color: #337ab7;
+  border-color: #337ab7;
+}

@@ -1,0 +1,20 @@
+/**
+* 这是tags的样式，包括了：
+*
+*/
+
+.tags a{
+  /*margin-bottom: -5px;*/
+}
+.tags a{
+  display: inline-block;
+  border: 1px solid #bfbfbf;
+  border-radius: 999em;
+  padding: 0 10px;
+  line-height: 24px;
+  font-size: 12px;
+  margin: 0 1px 6px 1px;
+}
+.tags a:hover{
+  border-color: #337ab7;
+}

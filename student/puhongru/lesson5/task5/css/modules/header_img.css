@@ -1,0 +1,40 @@
+/**
+* 这是关于页面头部大图的样式，包括了：
+*
+* 头部大图的背景、字体、颜色，不同屏幕展示不同的效果等
+*
+*/
+.page--header--content{
+  position: relative;
+  background-color: #A3287A;
+  width: 100%;
+  height: 474px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.page--header--content .container{
+  position: relative;
+}
+.scene{
+  min-width: 950px;
+  width: 80%;
+  margin: 0 auto;
+}
+.site-heading{
+  position: absolute;
+  top: 0;
+  padding: 150px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+/* 屏幕小于800px */
+@media only screen and (max-width: 800px) {
+  .page--header--content{
+    height: 249px;
+  }
+  .site-heading{
+    padding: 95px 0 70px;
+  }
+}

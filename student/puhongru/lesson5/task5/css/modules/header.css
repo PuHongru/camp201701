@@ -1,0 +1,84 @@
+/**
+* 这是关于页面头部导航栏的样式，包括了：
+*
+* 头部导航栏背景、字体、颜色，不同屏幕展示不同的效果等
+*
+*/
+.page--header{
+  background: rgba(0, 0, 0, 0.39);
+}
+  .navbar{
+    margin: 0 2vw;
+  }
+
+  .navbar a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .navbar a:hover{
+    color: rgba(255,255,255,0.8)
+  }
+
+/* 在屏幕大于800时 */
+.drop-down{
+  display: none;
+}
+.navbar--nav__right li{
+  margin-left: 10px;
+}
+.navbar--nav__right li a{
+  font-size: 16px;
+}
+
+/* 在屏幕小于800px时，导航栏右边样式变化 */
+@media only screen and (max-width: 800px) {
+  .navbar--nav__right{
+    display: none;
+  }
+
+  .drop-down{
+    display: block;
+    height: 8vh;
+    float: right;
+  }
+  .drop-down a{
+    display: block;
+    line-height: 8vh;
+    width: 100px;
+    text-align: right;
+  }
+  .drop-down--content{
+    padding: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+         -o-transition: all 1s ease;
+             transition: all 1s ease;
+    position: absolute;
+    top: 7vh;
+    right: 0;
+  }
+  .drop-down--content a{
+    display: block;
+    text-decoration: none;
+    width: 80px;
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.39);
+  }
+  .drop-down:hover .drop-down--content{
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    height: 20vh;
+  }
+}

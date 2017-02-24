@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="CSS guide lines">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>CSS guide lines-蒲的博客 | Pu's Blog</title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="css/base/normalize.css" rel="stylesheet">
+  <link href="css/pages/post.css" rel="stylesheet">
+</head>
+<body>
+<!--Navigation-->
+<header id="home--header" class="page--header">
+  <!--导航栏-->
+  <nav class="navbar page--header--nav">
+    <div class="navbar--header__left page-scroll">
+      <a href="index.html" title="首页">Pu's Blog</a>
+    </div>
+    <div class="navbar--collapse">
+      <div class="drop-down">
+        <a href="#">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <ul class="drop-down--content">
+          <li><a href="index.html" title="首页">HOME</a></li>
+          <li><a href="about.html" title="about">ABOUT</a></li>
+          <li><a href="#" title="archives">ARCHIVES</a></li>
+          <li><a href="#" title="tags">TAGS</a></li>
+        </ul>
+      </div>
+      <ul class="nav navbar--nav navbar--nav__right list-inline">
+        <li><a href="index.html" title="首页">HOME</a></li>
+        <li><a href="about.html" title="about">ABOUT</a></li>
+        <li><a href="#" title="archives">ARCHIVES</a></li>
+        <li><a href="#" title="tags">TAGS</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!--头部图-->
+<!--头部大图-->
+<div class="page--header--content home--section--content">
+  <div class="container">
+    <div class="site-heading">
+      <h1>CSS guide lines</h1>
+      <span class="subheading">High-level advice and guidelines for writing sane, manageable, scalable CSS</span>
+    </div>
+  </div>
+</div>
+
+<!--Main Content-->
+<article>
+  <div class="container clearfix">
+    <div class="mod">
+      <!--Post Container-->
+      <div class="post-container post">
+        <p>原文链接：<a href="http://cssguidelin.es/#syntax-and-formatting" target="_blank">CSS guide lines</a></p>
+        <h2 id="articleHeader0">Syntax and Formatting</h2>
+        <p>At a very high-level,we want</p>
+        <ul>
+          <li>
+            two (2) space indents,no tabs;
+          </li>
+          <li>
+            80 character wide column;
+          </li>
+          <li>
+            multi-line CSS;
+          </li>
+          <li>
+            meaningful use of whitespace;
+          </li>
+        </ul>
+        <p>But, as with anything, the specifics are somewhat irrelevant-consistency is key.</p>
+        <h2 id="articleHeader1">Multiple Files</h2>
+        <p>With the meteoric rise of preprocessors of late, more often is the case that developers are splitting CSS across multiple files.</p>
+        <p>Even if not using a preprocessor, it is a good idea to split discrete chunks of code into their own files, which are concatenated during a build step.</p>
+        <h2 id="articleHeader2">Table of Contents</h2>
+        <p>An up-to-date table of contents provides a team with a single, canonical catalogue of what is in a CSS project, what it does, and in what order.</p>
+        <p>A simple table of contents will—in order, naturally—simply provide the name of the section and a brief summary of what it is and does.</p>
+        <p>Naturally, this section would be substantially larger on the majority of projects, but hopefully we can see how this section—in the master stylesheet—provides developers with a project-wide view of what is being used where, and why.</p>
+        <h2 id="articleHeader3">80 Characters Wide</h2>
+        <h2 id="articleHeader4">Meaningful Whitespace</h2>
+        <ul>
+          <li>
+            One (1) empty line between closely related rulesets.
+          </li>
+          <li>
+            Two (2) empty lines between loosely related rulesets.
+          </li>
+          <li>
+            Five (5) empty lines between entirely new sections.
+          </li>
+        </ul>
+        <h2 id="articleHeader5">HTML</h2>
+        <p>When writing multiple values in a class attribute, separate them with two spaces</p>
+        <p>When multiple classes are related to each other, consider grouping them in square brackets ([ and ])</p>
+        <p>As with our rulesets, it is possible to use meaningful whitespace in your HTML. You can denote thematic breaks in content with five (5) empty lines</p>
+        <p>Separate independent but loosely related snippets of markup with a single empty line</p>
+        <hr>
+        <!--上一篇、下一篇-->
+        <ul class="pager clearfix">
+          <li class="previous">
+            <a class="button btn-pre" href="#">← PREVIOUS POST</a>
+          </li>
+          <li class="next">
+            <a class="button btn-next" href="#">NEXT POST →</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Side Catalog Container-->
+      <aside class="sidebar-container catalog-container">
+        <div class="side-catalog">
+          <h3 class="titles">CATALOG</h3>
+          <ul>
+            <li>
+              <a href="#articleHeader0">Syntax and Formatting</a>
+            </li>
+            <li>
+              <a href="#articleHeader1">Multiple Files</a>
+            </li>
+            <li>
+              <a href="#articleHeader2">Table of Contents</a>
+            </li>
+            <li>
+              <a href="#articleHeader3">80 Characters Wide</a>
+            </li>
+            <li>
+              <a href="#articleHeader4">Meaningful Whitespace</a>
+            </li>
+            <li>
+              <a href="#articleHeader5">HTML</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--Sidebar Container-->
+      <aside class="sidebar-container">
+        <hr>
+
+        <!--Featured Tags-->
+        <section>
+          <h5 class="titles">FEATURED TAGS</h5>
+
+          <div class="tags">
+            <a href="#" title="前端工程师">前端工程师</a>
+            <a href="#" title="JavaScript">JavaScript</a>
+            <a href="#" title="CSS">CSS</a>
+            <a href="#" title="jQuery">jQuery</a>
+          </div>
+        </section>
+        <hr>
+
+        <!--Friends-->
+      </aside>
+    </div>
+  </div>
+</article>
+
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="mod">
+      <ul class="list-inline">
+        <li>
+          <a target="_blank" href="https://github.com/PuHongru" title="github">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.zhihu.com/people/pu-teng-59/activities" title="zhihu">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-1x fa-inverse">知</i>
+                </span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="http://weibo.com/u/2136440017" title="微博">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                </span>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="#" title="facebook">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+          </a>
+        </li>
+      </ul>
+      <p>Copyright &copy; Pu's Blog 2016</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

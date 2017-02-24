@@ -1,0 +1,22 @@
+/**
+* 这是markdown的样式
+*
+*/
+.post blockquote{
+  color: gray;
+  font-style: italic;
+  font-size: 0.95em;
+  margin: 20px 0 20px;
+  padding: 10px 20px;
+  border-left: 5px solid #eee;
+}
+.post a{
+  color: #007722;
+}
+.post p{
+  text-indent: 1em;
+}
+.post ul li{
+  list-style: inside;
+  margin: 1em 0;
+}

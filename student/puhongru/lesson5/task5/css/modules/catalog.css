@@ -1,0 +1,22 @@
+/*
+*  文章页catalog的样式
+*/
+
+.side-catalog ul li{
+  list-style: inside;
+  color: gray;
+  margin: 10px 0;
+}
+.side-catalog ul li a{
+  color: gray;
+}
+.side-catalog ul li a:hover{
+  color: #337ab7;
+}
+
+/* 屏幕跨度小于800px时，隐藏 */
+@media only screen and (max-width: 800px) {
+  .catalog-container{
+    display: none;
+  }
+}

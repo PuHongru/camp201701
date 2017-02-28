@@ -1,0 +1,11 @@
+{
+  "name": "formattime",
+  "version": "1.0.0",
+  "description": "格式化时间",
+  "main": "formatTime.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

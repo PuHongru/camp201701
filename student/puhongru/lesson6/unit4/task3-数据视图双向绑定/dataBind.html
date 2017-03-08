@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>数据视图双向绑定</title>
+</head>
+<body>
+<ul>
+  <li>
+    <label for="name">姓名</label>
+    <input q-name = 'name' id="name" name="name" type="text"/></li>
+  <li>
+    <label for="age">年龄</label>
+    <select q-age = 'age' id="age" name="age">
+      <option>80后</option>
+      <option>90后</option>
+      <option>00后</option>
+      <option>其他</option>
+    </select>
+  </li>
+</ul>
+
+<button id="confirm" type="submit">提交</button>
+<p id="result"></p>
+<script src="task3.js"></script>
+</body>
+</html>
